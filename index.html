@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remmy And Sons Agricultural Services</title> <!-- Title for the browser tab -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.jpg" alt="Remmy And Sons Logo">
+        </div>
+        <ul id="navMenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="mobileNavButton" class="mobile-nav-button">
+            ☰
+        </div>
+    </nav>
+
+    <!-- Title Visible on the Page -->
+    <section id="title-section">
+        <div class="container">
+            <h1>Remmy And Sons Agricultural Services</h1> <!-- Added title here -->
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Your Trusted Partner in Sustainable Agriculture</h2>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="clickable-section">
+        <div class="container">
+            <h2>About Remmy And Sons Agricultural Services</h2>
+            <p>Click to learn more about our company and values</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Professional Services</h2>
+            <div class="services-list">
+                <div class="service clickable-service" data-service="dam-digging">
+                    <img src="assets/images/backhoe.jpg" alt="Dam Digging">
+                    <h3>Dam Digging</h3>
+                </div>
+                <div class="service clickable-service" data-service="poultry">
+                    <img src="assets/images/chicken.jpg" alt="Poultry Farming">
+                    <h3>Poultry Farming</h3>
+                </div>
+                <div class="service clickable-service" data-service="dairy">
+                    <img src="assets/images/dairy.jpg" alt="Dairy Production">
+                    <h3>Dairy Production</h3>
+                </div>
+                <div class="service clickable-service" data-service="delivery">
+                    <img src="assets/images/eggs.jpg" alt="Eggs Delivery">
+                    <h3>Egg & Milk Delivery</h3>
+                </div>
+                <div class="service clickable-service" data-service="dam-construction">
+                    <img src="assets/images/dam.jpg" alt="Dam Service">
+                    <h3>Dam Construction</h3>
+                </div>
+                <div class="service clickable-service" data-service="incubation">
+                    <img src="assets/images/incubation.jpg" alt="Incubation Services">
+                    <h3>Incubation Services</h3>
+                </div>
+                <div class="service clickable-service" data-service="consultation">
+                    <img src="assets/images/farming.jpg" alt="Farming Consultations">
+                    <h3>Farming Consultations</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="clickable-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Click to view our portfolio and past projects</p>
+            <div class="gallery-images">
+                <img src="assets/images/farming2.jpg" alt="Farm">
+                <img src="assets/images/poultry.jpg" alt="Poultry">
+                <img src="assets/images/dairy.jpg" alt="Dairy Production">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="clickable-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Click here to see our contact information and team</p>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top">↑</button>
+</body>
+</html>

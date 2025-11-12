@@ -1,0 +1,308 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Main container for the page layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3e50;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    max-width: 150px;
+}
+
+nav #navMenu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav #navMenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav #navMenu li a:hover {
+    color: #e74c3c;
+}
+
+#mobileNavButton {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    color: white;
+}
+
+/* Title Section (Visible on Page) */
+#title-section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#title-section h1 {
+    font-size: 3rem;
+    color: #2d3e50;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('assets/images/hero-background.jpg'); /* Replace with your own image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+#hero .hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero .hero-text a {
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+#hero .hero-text a:hover {
+    background-color: #c0392b;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2d3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Services Section */
+#services {
+    background-color: #ecf0f1;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    color: #2d3e50;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ecf0f1;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Modal */
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#modal .modal-content h3 {
+    font-size: 2rem;
+    color: #2d3e50;
+}
+
+#modal .modal-content .close {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #e74c3c;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav #navMenu {
+        display: none; /* Hide menu by default */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #2d3e50;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    nav #mobileNavButton {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav #navMenu li {
+        margin: 10px 0;
+    }
+
+    nav #navMenu.active {
+        display: block; /* Show menu when active */
+    }
+
+    #title-section h1 {
+        font-size: 2.2rem;
+    }
+
+    #hero .hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr 1fr; /* Two columns on mobile */
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+}
